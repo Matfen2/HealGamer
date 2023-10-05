@@ -219,6 +219,281 @@ $thirdFont: RoundedSans;
     }
 }
 
+// WELL-PAGE
+.wellContain {
+    .present {
+        height: 90vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('/assets/picts/heal-page/sportBackground.jpg');
+        .navbar {
+            @include flex (row);
+            align-items: center;
+            justify-content: space-between;
+            .navbar-brand {
+                margin-left: 15px;
+                h2 {
+                    font-weight: bold;
+                    color: $firstColor;
+                    text-shadow: 0px 0px 8px rgba(0,0,0,0.56);
+                }
+            }
+            #btnCanvas {
+                display: none;
+                font-size: 1.5em;
+                color: $firstColor;
+                border: transparent;
+                background: transparent;
+            }
+            .navbar-nav {
+                column-gap: 60px;
+                @include flex (row);
+                margin-right: 12px;
+                .nav-item {
+                    .nav-link {
+                        font-size: 1.8em;
+                        color: $firstColor;
+                        letter-spacing: 2px;
+                        font-family: $secondFont;
+                        text-shadow: 0px 0px 8px rgba(16, 3, 133, 0.56);
+                    }
+                }
+                #btnLogIn {
+                    font-size: 1.4em;
+                    color: $firstColor;
+                    border: transparent;
+                    background: transparent;
+                }
+            }
+        }
+    }
+    .sport {
+        .doSport {
+            letter-spacing: 3px;
+            font-size: 1.6em;
+            padding-top: 5px;
+            text-align: center;
+            font-family: $thirdFont;
+            color: $secondColor;
+            text-shadow: 0px 0px 8px rgb(255, 255, 255);
+        }
+        .effect {
+            letter-spacing: 3px;
+            font-size: 1.6em;
+            padding-top: 5px;
+            text-align: center;
+            font-family: $secondFont;
+            color: $secondColor;
+            text-shadow: 0px 0px 8px rgb(255, 255, 255);
+        }
+        .listSport {
+            text-align: center;
+            margin-bottom: 20px;
+            .row {
+                margin-right: 90px;
+                margin-left: 90px;
+                .col-lg-3 {
+                    .img-fluid {
+                        height: 300px;
+                        max-width: 360px;
+                        border-radius: 20px;
+                        border: 0px solid $firstColor;
+                    }
+                }
+            }
+        }
+    }
+    .position {
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('/assets/picts/heal-page/neonGridBackground.png');
+        .invest {
+            letter-spacing: 3px;
+            font-size: 1.8em;
+            padding-top: 15px;
+            text-align: center;
+            font-family: $thirdFont;
+            color: $firstColor;
+            text-shadow: 0px 0px 8px rgb(0, 0, 0);
+        }
+        .posture {
+            text-align: center;
+            .img-fluid {
+                height: 650px;
+                max-width: 600px;
+            }
+        }
+        .effectPosture {
+            margin: auto;
+            max-width: 950px;
+            letter-spacing: 3px;
+            font-size: 1.6em;
+            padding-top: 5px;
+            text-align: center;
+            font-family: $secondFont;
+            color: $firstColor;
+            margin-bottom: 30px;
+        }
+        .listMateriel {
+            text-align: center;
+            .row {
+                .col-lg-6 {
+                    .img-fluid {
+                        height: 460px;
+                        max-width: 450px;
+                    }
+                    .infoMateriel {
+                        justify-content: center;
+                        column-gap: 60px;
+                        align-items: center;
+                        @include flex (row);
+                        .price {
+                            margin-top: 20px;
+                            letter-spacing: 2px;
+                            font-size: 1.7em;
+                            font-family: $thirdFont;
+                            color: $firstColor;
+                        }
+                        #btnBuy {
+                            height: 42.5px;
+                            border-radius: 10px;
+                            font-size: 1.5em;
+                            font-family: $secondFont;
+                            color: $firstColor;
+                            background-color: darkgreen;
+                            a {
+                                color: $firstColor;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .detente {
+        margin: -5px auto;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('/assets/picts/heal-page/detenteBackground.jpg');
+        .pause {
+            letter-spacing: 3px;
+            font-size: 1.8em;
+            padding-top: 15px;
+            text-align: center;
+            font-family: $thirdFont;
+            color: $firstColor;
+            text-shadow: 0px 0px 8px rgb(0, 0, 0);
+        }
+        .listPause {
+            margin: 10px auto;
+            .row {
+                .col-lg-8 {
+                    p {
+                        margin: 9px auto;
+                        letter-spacing: 3px;
+                        max-width: 980px;
+                        font-size: 1.6em;
+                        padding-top: 5px;
+                        text-align: center;
+                        font-family: $secondFont;
+                        color: $firstColor;
+                        margin-bottom: 30px;
+                    }
+                }
+                .col-lg-4 {
+                    .img-fluid {
+                        height: 200px;
+                        max-width: 450px;
+                        border-radius: 10px;
+                        border: 0px solid $firstColor;
+                    }
+                }
+            }
+        }
+        .yourIdea {
+            margin: 15px auto;
+            letter-spacing: 3px;
+            max-width: 700px;
+            font-size: 1.6em;
+            padding-top: 5px;
+            text-align: center;
+            font-family: $secondFont;
+            color: $firstColor;
+            margin-bottom: 30px;
+        }
+        .form-area {
+            margin: -35px auto;
+            display: block;
+            padding-bottom: 4px;
+            form {
+                margin: auto;
+                display: block;
+                .form-group {
+                    textarea {
+                        margin: auto;
+                        display: block;
+                        border-radius: 10px;
+                        border: 0px solid $firstColor;
+                    }
+                    .warning {
+                        margin: auto;
+                        display: block;
+                        max-width: 500px;
+                    }
+                }
+                #btnSend {
+                    margin: 12px auto;
+                    display: block;
+                    height: 40.5px;
+                    border-radius: 10px;
+                    font-size: 1.5em;
+                    font-family: $secondFont;
+                    color: $firstColor;
+                    background-color: darkgreen;
+                }
+            }
+        }
+    }
+    .footer {
+        margin-top: 34px;
+        opacity: 0.8;
+        align-items: center;
+        @include flex (row);
+        justify-content: space-between;
+        background-color: black;
+        p {
+            margin-top: 7px;
+            margin-left: 10px;
+            line-height: 40px;
+            padding-top: 2px;
+            text-align: center;
+            font-size: 1.6em;
+            color: $firstColor;
+            font-family: $firstFont;
+        }
+        #btnContact {
+            font-size: 1.4em;
+            letter-spacing: 3px;
+            font-family: $firstFont;
+            color: $firstColor;
+            margin-right: 10px;
+            background: transparent;
+            border: 2px solid $firstColor;
+            transition: all 0.25ms ease;
+            &:hover {
+                color: $secondColor;
+                background-color: $firstColor;
+            }
+        }
+    }
+}
+
 // LOG IN PAGE
 .connectContain {
     height: 100vh;

@@ -1,0 +1,78 @@
+<div class="wellContain">
+    <div class="present">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <h2>HEAL GAMER</h2>
+            </div>
+            <button type="button" id="btnCanvas" data-bs-toggle="offcanvas" data-bs-target="#sideCanvas"><i class="fas fa-bars"></i></button>
+            <div class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">ETRE EN FORME</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">ANTI INFLAMMATOIRE</a></li>
+                <button type="button" id="btnLogIn" [routerLink]="'/log-in-page'"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
+            </div>
+        </nav>
+        <div class="goal">
+            <p>Transformez votre vie grâce à la remise en forme : découvrez ce dont vous avez besoin pour atteindre vos objectifs.</p>
+        </div>
+    </div>
+    <div class="sport">
+        <h2 class="doSport">FAIRE DU SPORT :</h2>
+        <p class="effect">Faire du sport est bénéfique pour le corps et l'esprit, cela améliore le sommeil, la qualité de vie, le système nerveux, la circulation sanguine, privilégier tout d'abord des sports légers et non intenses (au minimum 4 fois par semaine) :</p>
+        <div class="listSport">
+            <div class="row">
+                <div class="col-lg-3" *ngFor="let sport of sports">
+                    <img [src]="sport.pict" class="img-fluid w-100" alt="pictSport" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="position">
+        <h2 class="invest">INVESTIR DANS DU MATERIEL ERGONOMIQUE :</h2>
+        <div class="posture">
+            <img src="/assets/picts/heal-page/malDeDos-removebg-preview.png" class="img-fluid w-100" alt="pictPosture" />
+        </div>
+        <p class="effectPosture">A force de rester toute la journée sur le bureau, les gens finissent par avoir de graves problèmes tels que des troubles musculo-squelettiques plus graves.</p>
+        <div class="listMateriel">
+            <div class="row">
+                <div class="col-lg-6" *ngFor="let materiel of materiels">
+                    <img [src]="materiel.pict" class="img-fluid w-100" alt="pictMateriel" />
+                    <div class="infoMateriel">
+                        <p class="price">{{materiel.price | number: '1.2-2'}} €</p>
+                        <button type="button" id="btnBuy"><a [href]="materiel.hrefBuy">ACHETER</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="detente">
+        <h2 class="pause">FAIRE DE PAUSES REGULIERES :</h2>
+        <div class="listPause">
+            <div class="row">
+                <div class="col-lg-8">
+                    <p>Faire de pauses régulières après une heure ou deux heures sur l'ordinateur peut apporter des effets bénéfiques sur le système nerveux. Faites ce que vous aimez faire pour vous détendre : écouter de la musique, lire un livre, promener votre chien, etc...</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="/assets/picts/heal-page/dogStressed.jpg" class="img-fluid w-100" alt="pictDetente" />
+                </div>
+            </div>
+        </div>
+        <p class="yourIdea">Votre idée de remise en forme est intéressante selon vous, n’hésitez pas à la partager avec nous</p>
+        <div class="form-area">
+            <form #idea="ngForm" (ngSubmit)="giveIdea(idea)">
+                <div class="form-group">
+                    <label></label>
+                    <textarea name="idea" minlength="500" #comment="ngModel" [(ngModel)]="person.comment"  cols="75" rows="10" [ngClass]="{'is.invalid': comment.touched && comment.invalid}" placeholder="Ecrivez votre idée (limite 500 lettres)" required></textarea>
+                    <div class="warning" *ngIf="comment.invalid && (comment.touched || comment.dirty)">
+                        <div class="alert alert-danger" *ngIf="comment.hasError('required')">Votre commentaire est requis</div>
+                        <div class="alert alert-danger" *ngIf="comment.hasError('minlength')">Votre commentaire doit faire moins de 500 lignes</div>
+                    </div>
+                </div>
+                <button type="submit" id="btnSend" [disabled]="idea.invalid">ENVOYER</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© Heal Gamer</p>
+        <button type="button" id="btnContact">CONTACT</button>
+    </div>
+</div>
