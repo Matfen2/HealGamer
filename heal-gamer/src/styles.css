@@ -1,1 +1,515 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  display: block;
+}
+
+.mainContain {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.mainContain .present {
+  height: 88.5vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/main-page/foodMainTwo.png");
+}
+.mainContain .present .navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.mainContain .present .navbar .navbar-brand {
+  margin-left: 15px;
+}
+.mainContain .present .navbar .navbar-brand h2 {
+  font-weight: bold;
+  color: azure;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.56);
+}
+.mainContain .present .navbar #btnCanvas {
+  display: none;
+  font-size: 1.5em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+.mainContain .present .navbar .navbar-nav {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 12px;
+}
+.mainContain .present .navbar .navbar-nav .nav-item .nav-link {
+  font-size: 1.8em;
+  color: azure;
+  letter-spacing: 2px;
+  font-family: Bakery;
+  text-shadow: 0px 0px 8px rgba(16, 3, 133, 0.56);
+}
+.mainContain .present .navbar .navbar-nav #btnLogIn {
+  font-size: 1.4em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+.mainContain .present .guide {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 80%;
+  width: 100%;
+  height: 120px;
+  max-width: 460px;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  border: 1px solid azure;
+  background-color: black;
+}
+.mainContain .present .guide p {
+  font-size: 1.8em;
+  color: azure;
+  font-family: DKLongreach;
+  text-shadow: 0px 0px 8px rgba(16, 3, 133, 0.56);
+}
+.mainContain .present .guide form {
+  position: relative;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -165%);
+}
+.mainContain .present .guide form .form-area .form-group {
+  display: flex;
+  flex-direction: row;
+}
+.mainContain .present .guide form .form-area .form-group .form-control {
+  width: 70%;
+  margin: auto;
+  display: block;
+  border-radius: 10px 0px 0px 10px;
+}
+.mainContain .present .guide form .form-area .form-group #btnRecive {
+  height: 42.5px;
+  border-radius: 0px 10px 10px 0px;
+  margin-right: 40px;
+  font-size: 1.5em;
+  font-family: Bakery;
+  color: azure;
+  background-color: darkgreen;
+}
+.mainContain .goal {
+  height: 93px;
+  opacity: 0.8;
+  background-color: black;
+}
+.mainContain .goal p {
+  line-height: 45px;
+  font-family: Bakery;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 1.7em;
+  color: azure;
+}
+.mainContain .ideas {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/main-page/ideaRecipes.png");
+}
+.mainContain .ideas .recipes {
+  letter-spacing: 3px;
+  font-size: 1.6em;
+  padding-top: 5px;
+  text-align: center;
+  font-family: RoundedSans;
+}
+.mainContain .ideas .listIdeas .row {
+  text-align: center;
+}
+.mainContain .ideas .listIdeas .row .col-lg-4 .img-fluid {
+  cursor: pointer;
+  height: 300px;
+  max-width: 480px;
+  border-radius: 40px;
+  border: 1px solid black;
+}
+.mainContain .ideas .listIdeas .row .col-lg-4:hover {
+  opacity: 1;
+}
+.mainContain .ideas .listIdeas .row .col-lg-4 .containIdeas {
+  cursor: pointer;
+  position: relative;
+  top: -83.5%;
+  left: 10.4%;
+  text-align: center;
+  height: 300px;
+  max-width: 480px;
+  border-radius: 40px;
+  margin-bottom: -240px;
+  border: 0px solid azure;
+}
+.mainContain .ideas .listIdeas .row .col-lg-4 .containIdeas p {
+  color: rgb(106, 161, 3);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  font-size: 2.4em;
+  font-family: DKLongreach;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px 0px 0 #4074b5, 0px 2px 0 #ffffff, -2px 0px 0 #ffffff, 0px -2px 0 #ffffff, 1px 1px 8px rgba(206, 85, 66, 0);
+}
+.mainContain .ideas .listIdeas .row .col-lg-4 .containIdeas:hover {
+  opacity: 0;
+}
+.mainContain .footer {
+  opacity: 0.8;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+}
+.mainContain .footer p {
+  margin-top: 7px;
+  margin-left: 10px;
+  line-height: 40px;
+  padding-top: 2px;
+  text-align: center;
+  font-size: 1.6em;
+  color: azure;
+  font-family: DKLongreach;
+}
+.mainContain .footer #btnContact {
+  font-size: 1.4em;
+  letter-spacing: 3px;
+  font-family: DKLongreach;
+  color: azure;
+  margin-right: 10px;
+  background: transparent;
+  border: 2px solid azure;
+  transition: all 0.25ms ease;
+}
+.mainContain .footer #btnContact:hover {
+  color: black;
+  background-color: azure;
+}
+
+.connectContain {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/log-in-page/logInBackground.jpg");
+}
+.connectContain #btnClose {
+  position: relative;
+  top: 0%;
+  left: 98%;
+  font-size: 2em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+  transition: all 0.25ms ease;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.56);
+}
+.connectContain #btnClose:hover {
+  color: darkred;
+}
+.connectContain .cardConnect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  max-width: 500px;
+}
+.connectContain .cardConnect .logIn {
+  color: azure;
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-family: DKLongreach;
+  text-align: center;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.56);
+}
+.connectContain .cardConnect .form-area {
+  margin-top: -35px;
+}
+.connectContain .cardConnect .form-area form .formGroupOne {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  flex-direction: row;
+}
+.connectContain .cardConnect .form-area form .formGroupOne input {
+  font-size: 1.4em;
+  font-family: Bakery;
+}
+.connectContain .cardConnect .form-area form #btnConnect {
+  cursor: pointer;
+  display: block;
+  margin: 15px auto;
+  height: 42.5px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-family: Bakery;
+  color: azure;
+  letter-spacing: 1px;
+  background-color: darkgreen;
+}
+.connectContain .cardConnect .hrefInscribe {
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: DKLongreach;
+}
+
+.inscribeContain {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/picts/sign-up-page/signUpBackground.png");
+}
+.inscribeContain #btnClose {
+  position: relative;
+  top: 0%;
+  left: 98%;
+  font-size: 2em;
+  color: black;
+  border: transparent;
+  background: transparent;
+  transition: all 0.25ms ease;
+  text-shadow: 0px 0px 8px rgb(255, 255, 255);
+}
+.inscribeContain #btnClose:hover {
+  color: darkred;
+}
+.inscribeContain .cardInscribe {
+  position: absolute;
+  top: 45%;
+  left: 65%;
+  transform: translate(-10%, -40%);
+  max-width: 1200px;
+}
+.inscribeContain .cardInscribe .signUp {
+  color: black;
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-family: DKLongreach;
+  text-align: center;
+  text-shadow: 0px 0px 8px rgb(255, 255, 255);
+}
+.inscribeContain .cardInscribe .form-area {
+  margin: -30px auto;
+}
+.inscribeContain .cardInscribe .form-area form .formGroupOne, .inscribeContain .cardInscribe .form-area form .formGroupTwo {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  flex-direction: row;
+}
+.inscribeContain .cardInscribe .form-area form .formGroupOne .form-group input, .inscribeContain .cardInscribe .form-area form .formGroupTwo .form-group input {
+  width: 300px;
+  font-size: 1.4em;
+  font-family: Bakery;
+}
+.inscribeContain .cardInscribe .form-area form #btnInscribe {
+  cursor: pointer;
+  display: block;
+  margin: 15px auto;
+  height: 42.5px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-family: Bakery;
+  color: azure;
+  letter-spacing: 1px;
+  background-color: darkgreen;
+}
+.inscribeContain .cardInscribe .hrefConnect {
+  margin-top: 40px;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: DKLongreach;
+}
+
+@font-face {
+  font-family: DKLongreach;
+  src: url("/assets/fonts/DKLongreach.otf");
+}
+@font-face {
+  font-family: Bakery;
+  src: url("/assets/fonts/Bakery.otf");
+}
+@font-face {
+  font-family: RoundedSans;
+  src: url("/assets/fonts/RoundedSans.ttf");
+}
+@media screen and (max-width: 1440px) {
+  .mainContain .present {
+    height: 70vh;
+  }
+  .mainContain .present .guide {
+    top: 40%;
+    left: 82%;
+  }
+  .mainContain .goal {
+    height: 13vh;
+  }
+  .mainContain .goal p {
+    padding-top: 5px;
+    line-height: 30px;
+    font-size: 1.5em;
+  }
+  .mainContain .ideas .listIdeas .row .col-lg-4 .img-fluid {
+    max-width: 350px;
+    margin-bottom: -20px;
+  }
+  .mainContain .ideas .listIdeas .row .col-lg-4 .containIdeas {
+    top: -82.4%;
+    left: 12.1%;
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mainContain .present {
+    height: 52vh;
+  }
+  .mainContain .present .guide {
+    top: 40%;
+    left: 82%;
+    height: 140px;
+    max-width: 280px;
+  }
+  .mainContain .present .guide p {
+    font-size: 1.4em;
+  }
+  .mainContain .goal {
+    height: 16vh;
+  }
+  .mainContain .goal p {
+    padding-top: 5px;
+    line-height: 30px;
+    font-size: 1.5em;
+  }
+  .mainContain .ideas .listIdeas .row .col-lg-4 .img-fluid {
+    max-width: 260px;
+    margin-bottom: -20px;
+  }
+  .mainContain .ideas .listIdeas .row .col-lg-4 .containIdeas {
+    top: -82.4%;
+    left: 10.1%;
+    max-width: 260px;
+  }
+}
+@media screen and (max-width: 910px) {
+  .mainContain .present {
+    height: 50vh;
+  }
+  .mainContain .present .navbar #btnCanvas {
+    display: block;
+    margin-right: 10px;
+  }
+  .mainContain .present .navbar .navbar-nav {
+    display: none;
+  }
+  .mainContain .ideas .listIdeas .row .col-lg-4 .img-fluid {
+    height: 350px;
+    max-width: 660px;
+    margin-bottom: -20px;
+  }
+  .mainContain .ideas .listIdeas .row .col-lg-4 .containIdeas {
+    height: 350px;
+    top: -74.9%;
+    left: 13.7%;
+    max-width: 660px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainContain .present {
+    height: 900px;
+  }
+  .mainContain .present .navbar {
+    height: 85.5px;
+    opacity: 0.8;
+    background-color: black;
+  }
+  .mainContain .present .guide {
+    left: 78%;
+  }
+  .mainContain .goal {
+    height: 12vh;
+    overflow: auto;
+    max-height: 150px;
+  }
+  .mainContain .goal p {
+    font-size: 1.4em;
+    overflow: auto;
+    max-height: 150px;
+  }
+  .mainContain .ideas .listIdeas .row .col-lg-4 .img-fluid {
+    max-width: 550px;
+    margin-bottom: -20px;
+  }
+  .mainContain .ideas .listIdeas .row .col-lg-4 .containIdeas {
+    top: -74.9%;
+    left: 14.1%;
+    max-width: 550px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .mainContain .present {
+    height: 900px;
+  }
+  .mainContain .present .navbar {
+    height: 85.5px;
+    opacity: 0.8;
+    background-color: black;
+  }
+  .mainContain .present .guide {
+    top: 79%;
+    left: 48%;
+  }
+  .mainContain .ideas .listIdeas .row .col-lg-4 .img-fluid {
+    max-width: 300px;
+    margin-bottom: -80px;
+  }
+  .mainContain .ideas .listIdeas .row .col-lg-4 .containIdeas {
+    top: -74.9%;
+    left: 14.1%;
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mainContain .present {
+    height: 900px;
+  }
+  .mainContain .present .navbar {
+    height: 85.5px;
+    opacity: 0.8;
+    background-color: black;
+  }
+  .mainContain .present .guide {
+    top: 79%;
+    left: 48%;
+  }
+  .mainContain .ideas .recipes {
+    font-size: 1.4em;
+  }
+  .mainContain .ideas .listIdeas .row .col-lg-4 .img-fluid {
+    max-width: 240px;
+    margin-bottom: -80px;
+  }
+  .mainContain .ideas .listIdeas .row .col-lg-4 .containIdeas {
+    top: -74.9%;
+    left: 14.1%;
+    max-width: 240px;
+  }
+}/*# sourceMappingURL=styles.css.map */
