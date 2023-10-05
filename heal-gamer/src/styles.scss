@@ -227,9 +227,9 @@ $thirdFont: RoundedSans;
     background-repeat: no-repeat;
     background-image: url('/assets/picts/log-in-page/logInBackground.jpg');
     #btnClose {
-        position: relative;
+        position: absolute;
         top: 0%;
-        left: 98%;
+        right: 96%;
         font-size: 2.0em;
         color: $firstColor;
         border: transparent;
@@ -297,15 +297,15 @@ $thirdFont: RoundedSans;
     background-repeat: no-repeat;
     background-image: url('/assets/picts/sign-up-page/signUpBackground.png');
     #btnClose {
-        position: relative;
+        position: absolute;
         top: 0%;
-        left: 98%;
+        right: 97%;
         font-size: 2.0em;
         color: $secondColor;
         border: transparent;
         background: transparent;
         transition: all 0.25ms ease;
-        text-shadow: 0px 0px 8px rgb(255, 255, 255);
+        text-shadow: 0px 0px 8px rgba(0,0,0,0.56);
         &:hover {
             color: $thirdColor;
         }
@@ -414,6 +414,13 @@ $thirdFont: RoundedSans;
             }
         }
     }
+    // SIGN-UP-PAGE
+    .inscribeContain {
+        .cardInscribe {
+            top: 47%;
+            left: 55%;
+        }
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -452,6 +459,26 @@ $thirdFont: RoundedSans;
                             left: 10.1%;
                             max-width: 260px;
                         }
+                    }
+                }
+            }
+        }
+    }
+    // SIGN-UP-PAGE
+    .inscribeContain {
+        #btnClose {
+            top: -1%;
+            right: 97%;
+        }
+        .cardInscribe {
+            top: 47%;
+            left: 58%;
+            .form-area {
+                form {
+                    .formGroupOne, .formGroupTwo {
+                        display: flex;
+                        margin-left: 47px;
+                        flex-direction: column;
                     }
                 }
             }
@@ -538,6 +565,34 @@ $thirdFont: RoundedSans;
             }
         }
     }
+    // LOG-IN-PAGE
+    .connectContain {
+        .cardConnect {
+            .hrefInscribe {
+                font-size: 1.2em;
+            }
+        }
+    }
+    // SIGN-UP-PAGE
+    .inscribeContain {
+        #btnClose {
+            top: -1%;
+            right: 95.5%;
+        }
+        .cardInscribe {
+            top: 47%;
+            left: 52.5%;
+            .form-area {
+                form {
+                    .formGroupOne, .formGroupTwo {
+                        display: flex;
+                        margin-right: 56px;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -569,6 +624,98 @@ $thirdFont: RoundedSans;
                             max-width: 300px;
                         }
                     }
+                }
+            }
+        }
+    }
+    // LOG-IN-PAGE
+    .connectContain {
+        #btnClose {
+            right: 92%;
+        }
+        .cardConnect {
+            top: 54%;
+            .form-area {
+                form {
+                    .formGroupOne {
+                        input {
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // SIGN-UP-PAGE
+    .inscribeContain {
+        background-image: url('/assets/picts/sign-up-page/signUpBackgroundPortable.jpg');
+        #btnClose {
+            top: -1%;
+            right: 92.5%;
+            color: $firstColor;
+        }
+        .cardInscribe {
+            top: 56%;
+            left: 15.5%;
+            .signUp {
+                font-size: 1.6em;
+            }
+            .form-area {
+                form {
+                    .formGroupOne, .formGroupTwo {
+                        display: flex;
+                        margin-left: 76px;
+                        flex-direction: column;
+                        .form-group {
+                            input {
+                                width: 200px;
+                                font-size: 1.2em;
+                            }
+                        }
+                    }
+                }
+            }
+            .hrefConnect {
+                font-size: 1.4em;
+                text-shadow: 0px 0px 8px rgb(255, 255, 255);
+                a {
+                    color: $firstColor;
+                    text-shadow: 0px 0px 0px rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    // SIGN-UP-PAGE
+    .inscribeContain {
+        #btnClose {
+            top: -1%;
+            right: 91%;
+        }
+        .cardInscribe {
+            top: 56%;
+            left: 15.5%;
+            .form-area {
+                form {
+                    .formGroupOne, .formGroupTwo {
+                        margin-left: 60px;
+                        .form-group {
+                            input {
+                                width: 200px;
+                                font-size: 1.2em;
+                            }
+                        }
+                    }
+                }
+            }
+            .hrefConnect {
+                font-size: 1.4em;
+                text-shadow: 0px 0px 8px rgb(255, 255, 255);
+                a {
+                    color: $firstColor;
+                    text-shadow: 0px 0px 0px rgb(255, 255, 255);
                 }
             }
         }
@@ -605,6 +752,53 @@ $thirdFont: RoundedSans;
                             top: -74.9%;
                             left: 14.1%;
                             max-width: 240px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // LOG-IN-PAGE
+    .connectContain {
+        #btnClose {
+            right: 90%;
+        }
+        .cardConnect {
+            top: 50%;
+            .logIn {
+                font-size: 1.6em;
+            }
+            .form-area {
+                form {
+                    .formGroupOne {
+                        display: flex;
+                        flex-direction: column;
+                        input {
+                            width: 240px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // SIGN-UP-PAGE
+    .inscribeContain {
+        #btnClose {
+            top: -1%;
+            right: 90%;
+        }
+        .cardInscribe {
+            top: 56%;
+            left: 11.5%;
+            .form-area {
+                form {
+                    .formGroupOne, .formGroupTwo {
+                        margin-left: 50px;
+                        .form-group {
+                            input {
+                                width: 200px;
+                                font-size: 1.2em;
+                            }
                         }
                     }
                 }

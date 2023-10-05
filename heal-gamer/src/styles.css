@@ -210,9 +210,9 @@ body {
   background-image: url("/assets/picts/log-in-page/logInBackground.jpg");
 }
 .connectContain #btnClose {
-  position: relative;
+  position: absolute;
   top: 0%;
-  left: 98%;
+  right: 96%;
   font-size: 2em;
   color: azure;
   border: transparent;
@@ -278,15 +278,15 @@ body {
   background-image: url("/assets/picts/sign-up-page/signUpBackground.png");
 }
 .inscribeContain #btnClose {
-  position: relative;
+  position: absolute;
   top: 0%;
-  left: 98%;
+  right: 97%;
   font-size: 2em;
   color: black;
   border: transparent;
   background: transparent;
   transition: all 0.25ms ease;
-  text-shadow: 0px 0px 8px rgb(255, 255, 255);
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.56);
 }
 .inscribeContain #btnClose:hover {
   color: darkred;
@@ -377,6 +377,10 @@ body {
     left: 12.1%;
     max-width: 350px;
   }
+  .inscribeContain .cardInscribe {
+    top: 47%;
+    left: 55%;
+  }
 }
 @media screen and (max-width: 1024px) {
   .mainContain .present {
@@ -407,6 +411,19 @@ body {
     top: -82.4%;
     left: 10.1%;
     max-width: 260px;
+  }
+  .inscribeContain #btnClose {
+    top: -1%;
+    right: 97%;
+  }
+  .inscribeContain .cardInscribe {
+    top: 47%;
+    left: 58%;
+  }
+  .inscribeContain .cardInscribe .form-area form .formGroupOne, .inscribeContain .cardInscribe .form-area form .formGroupTwo {
+    display: flex;
+    margin-left: 47px;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 910px) {
@@ -463,6 +480,22 @@ body {
     left: 14.1%;
     max-width: 550px;
   }
+  .connectContain .cardConnect .hrefInscribe {
+    font-size: 1.2em;
+  }
+  .inscribeContain #btnClose {
+    top: -1%;
+    right: 95.5%;
+  }
+  .inscribeContain .cardInscribe {
+    top: 47%;
+    left: 52.5%;
+  }
+  .inscribeContain .cardInscribe .form-area form .formGroupOne, .inscribeContain .cardInscribe .form-area form .formGroupTwo {
+    display: flex;
+    margin-right: 56px;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 425px) {
   .mainContain .present {
@@ -485,6 +518,72 @@ body {
     top: -74.9%;
     left: 14.1%;
     max-width: 300px;
+  }
+  .connectContain #btnClose {
+    right: 92%;
+  }
+  .connectContain .cardConnect {
+    top: 54%;
+  }
+  .connectContain .cardConnect .form-area form .formGroupOne input {
+    width: 150px;
+  }
+  .inscribeContain {
+    background-image: url("/assets/picts/sign-up-page/signUpBackgroundPortable.jpg");
+  }
+  .inscribeContain #btnClose {
+    top: -1%;
+    right: 92.5%;
+    color: azure;
+  }
+  .inscribeContain .cardInscribe {
+    top: 56%;
+    left: 15.5%;
+  }
+  .inscribeContain .cardInscribe .signUp {
+    font-size: 1.6em;
+  }
+  .inscribeContain .cardInscribe .form-area form .formGroupOne, .inscribeContain .cardInscribe .form-area form .formGroupTwo {
+    display: flex;
+    margin-left: 76px;
+    flex-direction: column;
+  }
+  .inscribeContain .cardInscribe .form-area form .formGroupOne .form-group input, .inscribeContain .cardInscribe .form-area form .formGroupTwo .form-group input {
+    width: 200px;
+    font-size: 1.2em;
+  }
+  .inscribeContain .cardInscribe .hrefConnect {
+    font-size: 1.4em;
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+  }
+  .inscribeContain .cardInscribe .hrefConnect a {
+    color: azure;
+    text-shadow: 0px 0px 0px rgb(255, 255, 255);
+  }
+}
+@media screen and (max-width: 375px) {
+  .inscribeContain #btnClose {
+    top: -1%;
+    right: 91%;
+  }
+  .inscribeContain .cardInscribe {
+    top: 56%;
+    left: 15.5%;
+  }
+  .inscribeContain .cardInscribe .form-area form .formGroupOne, .inscribeContain .cardInscribe .form-area form .formGroupTwo {
+    margin-left: 60px;
+  }
+  .inscribeContain .cardInscribe .form-area form .formGroupOne .form-group input, .inscribeContain .cardInscribe .form-area form .formGroupTwo .form-group input {
+    width: 200px;
+    font-size: 1.2em;
+  }
+  .inscribeContain .cardInscribe .hrefConnect {
+    font-size: 1.4em;
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+  }
+  .inscribeContain .cardInscribe .hrefConnect a {
+    color: azure;
+    text-shadow: 0px 0px 0px rgb(255, 255, 255);
   }
 }
 @media screen and (max-width: 320px) {
@@ -511,5 +610,36 @@ body {
     top: -74.9%;
     left: 14.1%;
     max-width: 240px;
+  }
+  .connectContain #btnClose {
+    right: 90%;
+  }
+  .connectContain .cardConnect {
+    top: 50%;
+  }
+  .connectContain .cardConnect .logIn {
+    font-size: 1.6em;
+  }
+  .connectContain .cardConnect .form-area form .formGroupOne {
+    display: flex;
+    flex-direction: column;
+  }
+  .connectContain .cardConnect .form-area form .formGroupOne input {
+    width: 240px;
+  }
+  .inscribeContain #btnClose {
+    top: -1%;
+    right: 90%;
+  }
+  .inscribeContain .cardInscribe {
+    top: 56%;
+    left: 11.5%;
+  }
+  .inscribeContain .cardInscribe .form-area form .formGroupOne, .inscribeContain .cardInscribe .form-area form .formGroupTwo {
+    margin-left: 50px;
+  }
+  .inscribeContain .cardInscribe .form-area form .formGroupOne .form-group input, .inscribeContain .cardInscribe .form-area form .formGroupTwo .form-group input {
+    width: 200px;
+    font-size: 1.2em;
   }
 }/*# sourceMappingURL=styles.css.map */
