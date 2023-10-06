@@ -222,11 +222,11 @@ $thirdFont: RoundedSans;
 // WELL-PAGE
 .wellContain {
     .present {
-        height: 90vh;
+        height: 87vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        background-image: url('/assets/picts/heal-page/sportBackground.jpg');
+        background-image: url('/assets/picts/heal-page/stardewValleyBackground.png');
         .navbar {
             @include flex (row);
             align-items: center;
@@ -267,8 +267,35 @@ $thirdFont: RoundedSans;
                 }
             }
         }
+        .goal {
+            @include flex (row);
+            .img-fluid {
+                margin-top: -5px;
+                margin-right: -50px;
+                margin-left: 105px;
+                height: 720px;
+                max-width: 1150px;
+            }
+        }
+        .transform {
+            display: block;
+            margin: -90px auto;
+            max-width: 1200px;
+            letter-spacing: 3px;
+            font-size: 1.8em;
+            text-align: center;
+            font-family: $secondFont;
+            color: $firstColor;
+            text-shadow: 0px 0px 8px rgb(0, 0, 0);
+        }
     }
     .sport {
+        height: 100%;
+        margin-bottom: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('/assets/picts/heal-page/doSportBackground.jpg');
         .doSport {
             letter-spacing: 3px;
             font-size: 1.6em;
@@ -289,7 +316,8 @@ $thirdFont: RoundedSans;
         }
         .listSport {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 0px;
+            padding-bottom: 30px;
             .row {
                 margin-right: 90px;
                 margin-left: 90px;
@@ -306,6 +334,7 @@ $thirdFont: RoundedSans;
     }
     .position {
         height: auto;
+        margin: -20px auto;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -346,6 +375,7 @@ $thirdFont: RoundedSans;
                         max-width: 450px;
                     }
                     .infoMateriel {
+                        padding-bottom: 20px;
                         justify-content: center;
                         column-gap: 60px;
                         align-items: center;
@@ -392,6 +422,7 @@ $thirdFont: RoundedSans;
         }
         .listPause {
             margin: 10px auto;
+            padding-bottom: 24px;
             .row {
                 .col-lg-8 {
                     p {
@@ -408,6 +439,8 @@ $thirdFont: RoundedSans;
                 }
                 .col-lg-4 {
                     .img-fluid {
+                        display: block;
+                        margin: auto;
                         height: 200px;
                         max-width: 450px;
                         border-radius: 10px;
@@ -416,57 +449,168 @@ $thirdFont: RoundedSans;
                 }
             }
         }
-        .yourIdea {
-            margin: 15px auto;
-            letter-spacing: 3px;
-            max-width: 700px;
-            font-size: 1.6em;
-            padding-top: 5px;
-            text-align: center;
-            font-family: $secondFont;
-            color: $firstColor;
-            margin-bottom: 30px;
-        }
-        .form-area {
-            margin: -35px auto;
-            display: block;
-            padding-bottom: 4px;
-            form {
-                margin: auto;
-                display: block;
-                .form-group {
-                    textarea {
-                        margin: auto;
-                        display: block;
-                        border-radius: 10px;
-                        border: 0px solid $firstColor;
-                    }
-                    .warning {
-                        margin: auto;
-                        display: block;
-                        max-width: 500px;
-                    }
-                }
-                #btnSend {
-                    margin: 12px auto;
-                    display: block;
-                    height: 40.5px;
-                    border-radius: 10px;
-                    font-size: 1.5em;
-                    font-family: $secondFont;
-                    color: $firstColor;
-                    background-color: darkgreen;
-                }
-            }
-        }
     }
     .footer {
-        margin-top: 34px;
+        margin-top: -10px;
         opacity: 0.8;
         align-items: center;
         @include flex (row);
         justify-content: space-between;
         background-color: black;
+        p {
+            margin-top: 7px;
+            margin-left: 10px;
+            line-height: 40px;
+            padding-top: 2px;
+            text-align: center;
+            font-size: 1.6em;
+            color: $firstColor;
+            font-family: $firstFont;
+        }
+        #btnContact {
+            font-size: 1.4em;
+            letter-spacing: 3px;
+            font-family: $firstFont;
+            color: $firstColor;
+            margin-right: 10px;
+            background: transparent;
+            border: 2px solid $firstColor;
+            transition: all 0.25ms ease;
+            &:hover {
+                color: $secondColor;
+                background-color: $firstColor;
+            }
+        }
+    }
+}
+
+// ANTI-INFLAMMATORY-PAGE
+.inflammatoryContain {
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/assets/picts/anti-inflammatory-page/inflammatoryBackground.png');
+    .present {
+        .navbar {
+            @include flex (row);
+            align-items: center;
+            justify-content: space-between;
+            .navbar-brand {
+                margin-left: 15px;
+                h2 {
+                    font-weight: bold;
+                    color: $firstColor;
+                    text-shadow: 0px 0px 8px rgba(0,0,0,0.56);
+                }
+            }
+            #btnCanvas {
+                display: none;
+                font-size: 1.5em;
+                color: $firstColor;
+                border: transparent;
+                background: transparent;
+            }
+            .navbar-nav {
+                column-gap: 60px;
+                @include flex (row);
+                margin-right: 12px;
+                .nav-item {
+                    .nav-link {
+                        font-size: 1.8em;
+                        color: $firstColor;
+                        letter-spacing: 2px;
+                        font-family: $secondFont;
+                        text-shadow: 0px 0px 8px rgba(16, 3, 133, 0.56);
+                    }
+                }
+                #btnLogIn {
+                    font-size: 1.4em;
+                    color: $firstColor;
+                    border: transparent;
+                    background: transparent;
+                }
+            }
+        }
+    }
+    .effects {
+        margin: 15px auto;
+        text-align: center;
+        .inflammatory {
+            letter-spacing: 3px;
+            font-size: 2.1em;
+            padding-top: 5px;
+            text-align: center;
+            font-family: $thirdFont;
+            color: $firstColor;
+            text-shadow: 0px 0px 8px rgb(0, 0, 0);
+        }
+        .defineInflammatory {
+            width: 100%;
+            display: block;
+            margin: auto;
+            letter-spacing: 3px;
+            font-size: 1.6em;
+            padding-top: 5px;
+            max-width: 790px;
+            text-align: center;
+            font-family: $secondFont;
+            color: $firstColor;
+            text-shadow: 0px 0px 8px rgb(0, 0, 0);
+        }
+    }
+    .foods {
+        margin: auto;
+        display: block;
+        max-width: 900px;
+        .row {
+            .col-lg-6 {
+                text-align: center;
+                margin: 10px auto;
+                p {
+                   font-size: 1.8em;
+                    font-weight: bold;
+                    color: $firstColor;
+                    text-shadow: 0px 0px 8px rgb(0, 0, 0);
+                }
+                .img-fluid {
+                    height: 250px;
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+    .healthy {
+        margin: 25px auto;
+        text-align: center;
+        .meal {
+            width: 100%;
+            letter-spacing: 3px;
+            font-size: 1.8em;
+            padding-top: 5px;
+            text-align: center;
+            font-family: $secondFont;
+            color: $firstColor;
+            text-shadow: 0px 0px 8px rgb(0, 0, 0);
+        }
+        .trimRule {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: $firstColor;
+            text-shadow: 0px 0px 8px rgb(0, 0, 0);
+        }
+        .trum {
+            .img-fluid {
+                height: 400px;
+                max-width: 470px;
+            }
+        }
+    }
+    .footer {
+        align-items: center;
+        @include flex (row);
+        justify-content: space-between;
+        background-color: rgb(49, 49, 49);
         p {
             margin-top: 7px;
             margin-left: 10px;
@@ -696,6 +840,21 @@ $thirdFont: RoundedSans;
             left: 55%;
         }
     }
+    // WELL-PAGE
+    .wellContain {
+        .present {
+            height: 84vh;
+            .goal {
+                .img-fluid {
+                    margin-left: -10px;
+                    height: 560px;
+                }
+            }
+            .transform {
+                margin: -50px auto;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -759,6 +918,60 @@ $thirdFont: RoundedSans;
             }
         }
     }
+    // WELL-PAGE
+    .wellContain {
+        .present {
+            .goal {
+                .img-fluid {
+                    margin-left: -10px;
+                    height: 560px;
+                }
+            }
+            .transform {
+                font-size: 1.7em;
+            }
+        }
+        .sport {
+            .effect {
+                margin: -5px auto;
+                display: block;
+                max-width: 800px;
+                font-size: 1.5em;
+            }
+            .listSport {
+                margin: 13px auto;
+                .row {
+                    margin-right: 20px;
+                    margin-left: 20px;
+                    .col-lg-3 {
+                        .img-fluid {
+                            height: 320px;
+                            max-width: 550px;
+                        }
+                    }
+                }
+            }
+        }
+        .detente {
+            .listPause {
+                .row {
+                    .col-lg-8 {
+                        p {
+                            max-width: 700px;
+                            font-size: 1.4em;
+                        }
+                    }
+                    .col-lg-4 {
+                        .img-fluid {
+                            margin-top: 2px;
+                            max-width: 390px;
+                            margin-left: -15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 910px) {
@@ -790,6 +1003,95 @@ $thirdFont: RoundedSans;
                             top: -74.9%;
                             left: 13.7%;
                             max-width: 660px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ANTI-INFLAMMATORY-PAGE
+    .inflammatoryContain {
+        .present {
+            .navbar {
+                #btnCanvas {
+                    display: block;
+                    margin-right: 10px;
+                }
+                .navbar-nav {
+                    display: none;
+                }
+            }
+        }
+        .healthy {
+            .meal {
+                font-size: 1.7em;
+            }
+        }
+    }
+    // WELL-PAGE
+    .wellContain {
+        .present {
+            .navbar {
+                #btnCanvas {
+                    display: block;
+                    margin-right: 10px;
+                }
+                .navbar-nav {
+                    display: none;
+                }
+            }
+            .goal {
+                .img-fluid {
+                    margin-left: -10px;
+                    height: 560px;
+                }
+            }
+            .transform {
+                font-size: 1.7em;
+            }
+        }
+        .sport {
+            .effect {
+                margin: -5px auto;
+                display: block;
+                max-width: 800px;
+                font-size: 1.5em;
+            }
+            .listSport {
+                margin: -7px auto;
+                .row {
+                    margin-right: 20px;
+                    margin-left: 20px;
+                    .col-lg-3 {
+                        .img-fluid {
+                            height: 320px;
+                            max-width: 500px;
+                            margin-top: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        .detente {
+            .listPause {
+                .row {
+                    .col-lg-8 {
+                        p {
+                            margin-top: -7px;
+                            max-width: 700px;
+                            font-size: 1.4em;
+                        }
+                    }
+                    .col-lg-4 {
+                        .img-fluid {
+                            position: relative;
+                            top: 45%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            height: 240px;
+                            max-width: 440px;
+                            margin-left: -15px;
+                            margin-bottom: -5px;
                         }
                     }
                 }
@@ -863,6 +1165,94 @@ $thirdFont: RoundedSans;
                         display: flex;
                         margin-right: 56px;
                         flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+    // ANTI-INFLAMMATORY-PAGE
+    .inflammatoryContain {
+        .foods {
+            .row {
+                .col-lg-6 {
+                    .img-fluid {
+                        height: 300px;
+                        max-width: 550px;
+                    }
+                }
+            }
+        }
+        .healthy {
+            .meal {
+                font-size: 1.7em;
+            }
+        }
+    }
+    // WELL-PAGE
+    .wellContain {
+        .present {
+            .goal {
+                @include flex (column);
+            }
+        }
+        .sport {
+            .effect {
+                margin: -5px auto;
+                display: block;
+                max-width: 800px;
+                font-size: 1.5em;
+            }
+            .listSport {
+                margin: -7px auto;
+                .row {
+                    margin-right: 20px;
+                    margin-left: 20px;
+                    .col-lg-3 {
+                        .img-fluid {
+                            height: 320px;
+                            max-width: 500px;
+                            margin-top: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        .position {
+            .posture {
+                .img-fluid {
+                    height: 500px;
+                    max-width: 420px;
+                }
+            }
+            .effectPosture {
+                margin-top: -15px;
+                max-width: 750px;
+            }
+            .listMateriel {
+                .row {
+                    .col-lg-6 {
+                        .img-fluid {
+                            height: 400px;
+                            max-width: 400px;
+                        }
+                    }
+                }
+            }
+        }
+        .detente {
+            .listPause {
+                .row {
+                    .col-lg-8 {
+                        p {
+                            font-size: 1.5em;
+                        }
+                    }
+                    .col-lg-4 {
+                        .img-fluid {
+                            height: 200px;
+                            margin-left: 0px;
+                            max-width: 380px;
+                        }
                     }
                 }
             }
@@ -960,6 +1350,90 @@ $thirdFont: RoundedSans;
             }
         }
     }
+    // ANTI-INFLAMMATORY-PAGE
+    .inflammatoryContain {
+        .effects {
+            .defineInflammatory {
+                font-size: 1.6em;
+                max-width: 400px;
+            }
+        }
+        .foods {
+            .row {
+                .col-lg-6 {
+                    .img-fluid {
+                        height: 300px;
+                        max-width: 350px;
+                    }
+                }
+            }
+        }
+        .healthy {
+            .meal {
+                font-size: 1.7em;
+            }
+            .trum {
+                .img-fluid {
+                    height: 350px;
+                    max-width: 370px;
+                }
+            }
+        }
+    }
+    // WELL-PAGE
+    .wellContain {
+        .present {
+            height: 87vh;
+            .transform {
+                margin: -70px auto;
+                font-size: 1.4em;
+                max-width: 900px;
+            }
+        }
+        .sport {
+            .effect {
+                margin: -5px auto;
+                display: block;
+                max-width: 800px;
+                font-size: 1.5em;
+            }
+            .listSport {
+                margin: -7px auto;
+                .row {
+                    margin-right: 20px;
+                    margin-left: 20px;
+                    .col-lg-3 {
+                        .img-fluid {
+                            height: 320px;
+                            max-width: 500px;
+                            margin-top: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        .position {
+            .effectPosture {
+                margin-top: -15px;
+                max-width: 750px;
+            }
+        }
+        .detente {
+            .pause {
+                font-size: 1.6em;
+            }
+            .listPause {
+                .row {
+                    .col-lg-8 {
+                        p {
+                            font-size: 1.3em;
+                            max-width: 850px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -991,6 +1465,109 @@ $thirdFont: RoundedSans;
                 a {
                     color: $firstColor;
                     text-shadow: 0px 0px 0px rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+    // ANTI-INFLAMMATORY-PAGE
+    .inflammatoryContain {
+        .effects {
+            .defineInflammatory {
+                font-size: 1.6em;
+                max-width: 360px;
+            }
+        }
+        .foods {
+            .row {
+                .col-lg-6 {
+                    .img-fluid {
+                        height: 300px;
+                        max-width: 350px;
+                    }
+                }
+            }
+        }
+        .healthy {
+            .trum {
+                .img-fluid {
+                    height: 350px;
+                    max-width: 340px;
+                }
+            }
+        }
+    }
+    // WELL-PAGE
+    .wellContain {
+        .present {
+            height: 87vh;
+            .transform {
+                margin: -70px auto;
+                font-size: 1.4em;
+                max-width: 900px;
+            }
+        }
+        .sport {
+            .effect {
+                margin: -5px auto;
+                display: block;
+                max-width: 800px;
+                font-size: 1.4em;
+            }
+            .listSport {
+                margin: -7px auto;
+                .row {
+                    margin-right: 20px;
+                    margin-left: 20px;
+                    .col-lg-3 {
+                        .img-fluid {
+                            height: 320px;
+                            max-width: 500px;
+                            margin-top: 25px;
+                        }
+                    }
+                }
+            }
+        }
+        .position {
+            .invest {
+                font-size: 1.5em;
+            }
+            .effectPosture {
+                margin-top: -15px;
+                max-width: 500px;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            .listMateriel {
+                .row {
+                    .col-lg-6 {
+                        .img-fluid {
+                            height: 350px;
+                            max-width: 320px;
+                        }
+                    }
+                }
+            }
+        }
+        .detente {
+            .pause {
+                font-size: 1.6em;
+            }
+            .listPause {
+                .row {
+                    .col-lg-8 {
+                        p {
+                            font-size: 1.3em;
+                            max-width: 850px;
+                            margin-left: 20px;
+                            margin-right: 20px;
+                        }
+                    }
+                    .col-lg-4 {
+                        .img-fluid {
+                            max-width: 320px;
+                        }
+                    }
                 }
             }
         }
@@ -1074,6 +1651,65 @@ $thirdFont: RoundedSans;
                                 width: 200px;
                                 font-size: 1.2em;
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ANTI-INFLAMMATORY-PAGE
+    .inflammatoryContain {
+        .effects {
+            .defineInflammatory {
+                font-size: 1.6em;
+                max-width: 360px;
+            }
+        }
+        .foods {
+            .row {
+                .col-lg-6 {
+                    .img-fluid {
+                        height: 300px;
+                        max-width: 300px;
+                    }
+                }
+            }
+        }
+        .healthy {
+            .trum {
+                .img-fluid {
+                    height: 350px;
+                    max-width: 290px;
+                }
+            }
+        }
+    }
+    // WELL-PAGE
+    .wellContain {
+        .present {
+            height: 91.5vh;
+        }
+        .position {
+            .invest {
+                font-size: 1.2em;
+            }
+            .listMateriel {
+                .row {
+                    .col-lg-6 {
+                        .img-fluid {
+                            height: 350px;
+                            max-width: 270px;
+                        }
+                    }
+                }
+            }
+        }
+        .detente {
+            .listPause {
+                .row {
+                    .col-lg-4 {
+                        .img-fluid {
+                            max-width: 270px;
                         }
                     }
                 }
