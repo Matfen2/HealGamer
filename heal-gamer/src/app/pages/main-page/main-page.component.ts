@@ -4,16 +4,15 @@ import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.css']
+  styleUrls: ['./main-page.component.css'],
 })
 export class MainPageComponent {
   log = {
-    message: ''
-  }
+    message: '',
+  };
 
   showGuide(value: NgForm) {
     console.log(value);
-    
   }
 
   ideas = [
@@ -31,6 +30,16 @@ export class MainPageComponent {
       id: 3,
       when: 'Diner du Soir',
       pict: '/assets/picts/main-page/dinnerIdeas.jpg',
-    }
-  ]
+    },
+  ];
+
+  person = {
+    user: '',
+    email: '',
+    message: '',
+  };
+
+  showContact(value: NgForm) {
+    console.log(value);
+  }
 }

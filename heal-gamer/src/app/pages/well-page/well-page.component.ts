@@ -37,16 +37,27 @@ export class WellPageComponent {
     {
       id: 2,
       price: '14.99',
-      hrefBuy: 'https://www.amazon.fr/Correcteur-Redresseur-Réglable-Supérieure-Corriger/dp/B0CH27WJ62/ref=sr_1_23?crid=2AHV8RB63YGRO&keywords=correcteur%2Bde%2Bposture&qid=1696517479&sprefix=correc%2Caps%2C104&sr=8-23&th=1',
+      hrefBuy:
+        'https://www.amazon.fr/Correcteur-Redresseur-Réglable-Supérieure-Corriger/dp/B0CH27WJ62/ref=sr_1_23?crid=2AHV8RB63YGRO&keywords=correcteur%2Bde%2Bposture&qid=1696517479&sprefix=correc%2Caps%2C104&sr=8-23&th=1',
       pict: '/assets/picts/heal-page/correcteurDePosture-removebg-preview.png',
     },
   ];
 
   person = {
-    comment : ''
-  }
+    comment: '',
+  };
 
   giveIdea(give: NgForm) {
     console.log(give);
+  }
+
+  sendMessage = {
+    user: '',
+    email: '',
+    message: '',
+  };
+
+  showContact(value: NgForm) {
+    console.log(value);
   }
 }

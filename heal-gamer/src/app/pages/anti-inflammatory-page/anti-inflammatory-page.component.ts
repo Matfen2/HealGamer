@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-anti-inflammatory-page',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./anti-inflammatory-page.component.css']
 })
 export class AntiInflammatoryPageComponent {
+  person = {
+    user: '',
+    email: '',
+    message: ''
+  }
 
+  showContact (value: NgForm) {
+    console.log(value);
+  }
 }

@@ -782,6 +782,108 @@ $thirdFont: RoundedSans;
     }
 }
 
+// OFFCANVAS
+#sideCanvas {
+    height: 180px;
+    width: 100%;
+    max-width: 324px;
+    background-color: rgb(32, 32, 32);
+    border-radius: 0px 0px 0px 10px;
+    border: 1px solid $firstColor;
+    .offcanvas-header {
+        #btnCloseCanvas {
+            position: relative;
+            top: -2%;
+            left: 92%;
+            font-size: 1.4em;
+            color: $firstColor;
+            border: transparent;
+            background: transparent;
+        }
+    }
+    .offcanvas-body {
+        margin: -37px auto;
+        .listSide {
+            line-height: 40px;
+            list-style-type: none;
+            .side-item {
+                text-align: center;
+                .side-link {
+                    text-align: center;
+                    color: $firstColor;
+                    text-decoration: none;
+                    font-size: 1.8em;
+                    letter-spacing: 2px;
+                    font-family: $secondFont;
+                    text-shadow: 0px 0px 8px rgba(16, 3, 133, 0.56);
+                }
+            }
+            #btnLogIn {
+                margin: auto;
+                display: block;
+                font-size: 1.4em;
+                color: $firstColor;
+                border: transparent;
+                background: transparent;
+            }
+        }
+    }
+}
+
+// MODAL CONTACT
+#contact {
+    .modal-dialog {
+        .modal-content {
+            border-radius: 10px;
+            border: 0px solid $firstColor;
+            background: url('/assets/picts/main-page/ideaRecipes.png');
+            #btnCloseModal {
+                position: relative;
+                top: 9%;
+                left: 95%;
+                transform: translate(-50%, 0%);
+                color: $firstColor;
+                font-size: 1.6em;
+                border: transparent;
+                background: transparent;
+            }
+            .modal-body {
+                padding-bottom: 48px;
+                margin: -25px auto;
+                h2 {
+                    letter-spacing: 3px;
+                    font-size: 2.1em;
+                    padding-top: 5px;
+                    text-align: center;
+                    font-family: $thirdFont;
+                    color: $firstColor;
+                    text-shadow: 0px 0px 8px rgb(0, 0, 0);
+                }
+                .form-area {
+                    margin: -20px auto;
+                    form {
+                        .formGroupOne {
+                            column-gap: 30px;
+                            @include flex (row);
+                        }
+                        #btnSend {
+                            cursor: pointer;
+                            display: block;
+                            margin: 15px auto;
+                            border-radius: 10px;
+                            font-size: 1.5em;
+                            font-family: $secondFont;
+                            color: $firstColor;
+                            letter-spacing: 1px;
+                            background-color: darkgreen;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @font-face {
     font-family: $firstFont;
     src: url('/assets/fonts/DKLongreach.otf');
