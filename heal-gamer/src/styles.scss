@@ -638,6 +638,345 @@ $thirdFont: RoundedSans;
     }
 }
 
+// BREAKFAST-PAGE
+.breakfastContain {
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('/assets/picts/breakfast-page/ideaRecipes.png');
+    .present {
+        .navbar {
+            @include flex (row);
+            align-items: center;
+            justify-content: space-between;
+            .navbar-brand {
+                margin-left: 15px;
+                h2 {
+                    font-weight: bold;
+                    color: $firstColor;
+                    text-shadow: 0px 0px 8px rgba(0,0,0,0.56);
+                }
+            }
+            #btnCanvas {
+                display: none;
+                font-size: 1.5em;
+                color: $firstColor;
+                border: transparent;
+                background: transparent;
+            }
+            .navbar-nav {
+                column-gap: 60px;
+                @include flex (row);
+                margin-right: 12px;
+                .nav-item {
+                    .nav-link {
+                        font-size: 1.8em;
+                        color: $firstColor;
+                        letter-spacing: 2px;
+                        font-family: $secondFont;
+                        text-shadow: 0px 0px 8px rgba(16, 3, 133, 0.56);
+                    }
+                }
+                #btnLogIn {
+                    font-size: 1.4em;
+                    color: $firstColor;
+                    border: transparent;
+                    background: transparent;
+                    text-shadow: 0px 0px 8px rgba(0,0,0,0.56);
+                }
+            }
+        }
+    }
+    .breakfastPresent {
+        padding-bottom: 55px;
+        .name {
+            letter-spacing: 3px;
+            font-size: 2.1em;
+            padding-top: 5px;
+            text-align: center;
+            font-family: $thirdFont;
+            color: $firstColor;
+            text-shadow: 0px 0px 8px rgb(0, 0, 0);
+        }
+        .listBreakfast {
+            margin-top: -10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            text-align: center;
+            .row {
+                .col-lg-4 {
+                    .img-fluid {
+                        cursor: pointer;
+                        height: 230px;
+                        max-width: 450px;
+                        margin-top: 30px;
+                        border-radius: 20px;
+                        border: 0px solid $firstColor;
+                        transition: all 0.25ms ease;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        align-items: center;
+        @include flex (row);
+        justify-content: space-between;
+        background-color: rgb(49, 49, 49);
+        p {
+            margin-top: 7px;
+            margin-left: 10px;
+            line-height: 40px;
+            padding-top: 2px;
+            text-align: center;
+            font-size: 1.6em;
+            color: $firstColor;
+            font-family: $firstFont;
+        }
+        #btnContact {
+            font-size: 1.4em;
+            letter-spacing: 3px;
+            font-family: $firstFont;
+            color: $firstColor;
+            margin-right: 10px;
+            background: transparent;
+            border: 2px solid $firstColor;
+            transition: all 0.25ms ease;
+            &:hover {
+                color: $secondColor;
+                background-color: $firstColor;
+            }
+        }
+    }
+}
+
+// LUNCH-PAGE
+.lunchContain {
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('/assets/picts/breakfast-page/ideaRecipes.png');
+    .present {
+        .navbar {
+            @include flex (row);
+            align-items: center;
+            justify-content: space-between;
+            .navbar-brand {
+                margin-left: 15px;
+                h2 {
+                    font-weight: bold;
+                    color: $firstColor;
+                    text-shadow: 0px 0px 8px rgba(0,0,0,0.56);
+                }
+            }
+            #btnCanvas {
+                display: none;
+                font-size: 1.5em;
+                color: $firstColor;
+                border: transparent;
+                background: transparent;
+            }
+            .navbar-nav {
+                column-gap: 60px;
+                @include flex (row);
+                margin-right: 12px;
+                .nav-item {
+                    .nav-link {
+                        font-size: 1.8em;
+                        color: $firstColor;
+                        letter-spacing: 2px;
+                        font-family: $secondFont;
+                        text-shadow: 0px 0px 8px rgba(16, 3, 133, 0.56);
+                    }
+                }
+                #btnLogIn {
+                    font-size: 1.4em;
+                    color: $firstColor;
+                    border: transparent;
+                    background: transparent;
+                    text-shadow: 0px 0px 8px rgba(0,0,0,0.56);
+                }
+            }
+        }
+    }
+    .lunchPresent {
+        padding-bottom: 55px;
+        .name {
+            letter-spacing: 3px;
+            font-size: 2.1em;
+            padding-top: 5px;
+            text-align: center;
+            font-family: $thirdFont;
+            color: $firstColor;
+            text-shadow: 0px 0px 8px rgb(0, 0, 0);
+        }
+        .listLunch {
+            margin-top: -10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            text-align: center;
+            .row {
+                .col-lg-4 {
+                    .img-fluid {
+                        cursor: pointer;
+                        height: 230px;
+                        max-width: 450px;
+                        margin-top: 30px;
+                        border-radius: 20px;
+                        border: 0px solid $firstColor;
+                        transition: all 0.25ms ease;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        align-items: center;
+        @include flex (row);
+        justify-content: space-between;
+        background-color: rgb(49, 49, 49);
+        p {
+            margin-top: 7px;
+            margin-left: 10px;
+            line-height: 40px;
+            padding-top: 2px;
+            text-align: center;
+            font-size: 1.6em;
+            color: $firstColor;
+            font-family: $firstFont;
+        }
+        #btnContact {
+            font-size: 1.4em;
+            letter-spacing: 3px;
+            font-family: $firstFont;
+            color: $firstColor;
+            margin-right: 10px;
+            background: transparent;
+            border: 2px solid $firstColor;
+            transition: all 0.25ms ease;
+            &:hover {
+                color: $secondColor;
+                background-color: $firstColor;
+            }
+        }
+    }
+}
+
+// DINNER-PAGE
+.dinnerContain {
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('/assets/picts/breakfast-page/ideaRecipes.png');
+    .present {
+        .navbar {
+            @include flex (row);
+            align-items: center;
+            justify-content: space-between;
+            .navbar-brand {
+                margin-left: 15px;
+                h2 {
+                    font-weight: bold;
+                    color: $firstColor;
+                    text-shadow: 0px 0px 8px rgba(0,0,0,0.56);
+                }
+            }
+            #btnCanvas {
+                display: none;
+                font-size: 1.5em;
+                color: $firstColor;
+                border: transparent;
+                background: transparent;
+            }
+            .navbar-nav {
+                column-gap: 60px;
+                @include flex (row);
+                margin-right: 12px;
+                .nav-item {
+                    .nav-link {
+                        font-size: 1.8em;
+                        color: $firstColor;
+                        letter-spacing: 2px;
+                        font-family: $secondFont;
+                        text-shadow: 0px 0px 8px rgba(16, 3, 133, 0.56);
+                    }
+                }
+                #btnLogIn {
+                    font-size: 1.4em;
+                    color: $firstColor;
+                    border: transparent;
+                    background: transparent;
+                    text-shadow: 0px 0px 8px rgba(0,0,0,0.56);
+                }
+            }
+        }
+    }
+    .dinnerPresent {
+        padding-bottom: 55px;
+        .name {
+            letter-spacing: 3px;
+            font-size: 2.1em;
+            padding-top: 5px;
+            text-align: center;
+            font-family: $thirdFont;
+            color: $firstColor;
+            text-shadow: 0px 0px 8px rgb(0, 0, 0);
+        }
+        .listDinner {
+            margin-top: -10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            text-align: center;
+            .row {
+                .col-lg-4 {
+                    .img-fluid {
+                        cursor: pointer;
+                        height: 230px;
+                        max-width: 450px;
+                        margin-top: 30px;
+                        border-radius: 20px;
+                        border: 0px solid $firstColor;
+                        transition: all 0.25ms ease;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        align-items: center;
+        @include flex (row);
+        justify-content: space-between;
+        background-color: rgb(49, 49, 49);
+        p {
+            margin-top: 7px;
+            margin-left: 10px;
+            line-height: 40px;
+            padding-top: 2px;
+            text-align: center;
+            font-size: 1.6em;
+            color: $firstColor;
+            font-family: $firstFont;
+        }
+        #btnContact {
+            font-size: 1.4em;
+            letter-spacing: 3px;
+            font-family: $firstFont;
+            color: $firstColor;
+            margin-right: 10px;
+            background: transparent;
+            border: 2px solid $firstColor;
+            transition: all 0.25ms ease;
+            &:hover {
+                color: $secondColor;
+                background-color: $firstColor;
+            }
+        }
+    }
+}
+
 // LOG IN PAGE
 .connectContain {
     height: 100vh;
@@ -708,7 +1047,7 @@ $thirdFont: RoundedSans;
     }
 }
 
-// SING UP PAGE
+// SIGN UP PAGE
 .inscribeContain {
     height: 100vh;
     background-size: cover;
@@ -1196,6 +1535,51 @@ $thirdFont: RoundedSans;
                             margin-bottom: -5px;
                         }
                     }
+                }
+            }
+        }
+    }
+    // BREAKFAST 
+    .breakfastContain {
+        .present {
+            .navbar {
+                #btnCanvas {
+                    display: block;
+                    margin-right: 10px;
+                    text-shadow: 0px 0px 8px rgb(0, 0, 0);
+                }
+                .navbar-nav {
+                    display: none;
+                }
+            }
+        }
+    }
+    // LUNCH 
+    .lunchContain {
+        .present {
+            .navbar {
+                #btnCanvas {
+                    display: block;
+                    margin-right: 10px;
+                    text-shadow: 0px 0px 8px rgb(0, 0, 0);
+                }
+                .navbar-nav {
+                    display: none;
+                }
+            }
+        }
+    }
+    // LUNCH 
+    .dinnerContain {
+        .present {
+            .navbar {
+                #btnCanvas {
+                    display: block;
+                    margin-right: 10px;
+                    text-shadow: 0px 0px 8px rgb(0, 0, 0);
+                }
+                .navbar-nav {
+                    display: none;
                 }
             }
         }
@@ -1815,6 +2199,30 @@ $thirdFont: RoundedSans;
                         }
                     }
                 }
+            }
+        }
+    }
+    // BREAKFAST 
+    .breakfastContain {
+        .breakfastPresent {
+            .name {
+                font-size: 1.6em;
+            }
+        }
+    }
+    // LUNCH
+    .lunchContain {
+        .lunchContain {
+            .name {
+                font-size: 1.6em;
+            }
+        }
+    }
+    // DINNER 
+    .dinnerContain {
+        .dinnerPresent {
+            .name {
+                font-size: 1.6em;
             }
         }
     }

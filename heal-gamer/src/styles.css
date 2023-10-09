@@ -606,6 +606,330 @@ body {
   background-color: azure;
 }
 
+.breakfastContain {
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/picts/breakfast-page/ideaRecipes.png");
+}
+.breakfastContain .present .navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.breakfastContain .present .navbar .navbar-brand {
+  margin-left: 15px;
+}
+.breakfastContain .present .navbar .navbar-brand h2 {
+  font-weight: bold;
+  color: azure;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.56);
+}
+.breakfastContain .present .navbar #btnCanvas {
+  display: none;
+  font-size: 1.5em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+.breakfastContain .present .navbar .navbar-nav {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 12px;
+}
+.breakfastContain .present .navbar .navbar-nav .nav-item .nav-link {
+  font-size: 1.8em;
+  color: azure;
+  letter-spacing: 2px;
+  font-family: Bakery;
+  text-shadow: 0px 0px 8px rgba(16, 3, 133, 0.56);
+}
+.breakfastContain .present .navbar .navbar-nav #btnLogIn {
+  font-size: 1.4em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.56);
+}
+.breakfastContain .breakfastPresent {
+  padding-bottom: 55px;
+}
+.breakfastContain .breakfastPresent .name {
+  letter-spacing: 3px;
+  font-size: 2.1em;
+  padding-top: 5px;
+  text-align: center;
+  font-family: RoundedSans;
+  color: azure;
+  text-shadow: 0px 0px 8px rgb(0, 0, 0);
+}
+.breakfastContain .breakfastPresent .listBreakfast {
+  margin-top: -10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+.breakfastContain .breakfastPresent .listBreakfast .row .col-lg-4 .img-fluid {
+  cursor: pointer;
+  height: 230px;
+  max-width: 450px;
+  margin-top: 30px;
+  border-radius: 20px;
+  border: 0px solid azure;
+  transition: all 0.25ms ease;
+}
+.breakfastContain .footer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(49, 49, 49);
+}
+.breakfastContain .footer p {
+  margin-top: 7px;
+  margin-left: 10px;
+  line-height: 40px;
+  padding-top: 2px;
+  text-align: center;
+  font-size: 1.6em;
+  color: azure;
+  font-family: DKLongreach;
+}
+.breakfastContain .footer #btnContact {
+  font-size: 1.4em;
+  letter-spacing: 3px;
+  font-family: DKLongreach;
+  color: azure;
+  margin-right: 10px;
+  background: transparent;
+  border: 2px solid azure;
+  transition: all 0.25ms ease;
+}
+.breakfastContain .footer #btnContact:hover {
+  color: black;
+  background-color: azure;
+}
+
+.lunchContain {
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/picts/breakfast-page/ideaRecipes.png");
+}
+.lunchContain .present .navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.lunchContain .present .navbar .navbar-brand {
+  margin-left: 15px;
+}
+.lunchContain .present .navbar .navbar-brand h2 {
+  font-weight: bold;
+  color: azure;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.56);
+}
+.lunchContain .present .navbar #btnCanvas {
+  display: none;
+  font-size: 1.5em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+.lunchContain .present .navbar .navbar-nav {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 12px;
+}
+.lunchContain .present .navbar .navbar-nav .nav-item .nav-link {
+  font-size: 1.8em;
+  color: azure;
+  letter-spacing: 2px;
+  font-family: Bakery;
+  text-shadow: 0px 0px 8px rgba(16, 3, 133, 0.56);
+}
+.lunchContain .present .navbar .navbar-nav #btnLogIn {
+  font-size: 1.4em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.56);
+}
+.lunchContain .lunchPresent {
+  padding-bottom: 55px;
+}
+.lunchContain .lunchPresent .name {
+  letter-spacing: 3px;
+  font-size: 2.1em;
+  padding-top: 5px;
+  text-align: center;
+  font-family: RoundedSans;
+  color: azure;
+  text-shadow: 0px 0px 8px rgb(0, 0, 0);
+}
+.lunchContain .lunchPresent .listLunch {
+  margin-top: -10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+.lunchContain .lunchPresent .listLunch .row .col-lg-4 .img-fluid {
+  cursor: pointer;
+  height: 230px;
+  max-width: 450px;
+  margin-top: 30px;
+  border-radius: 20px;
+  border: 0px solid azure;
+  transition: all 0.25ms ease;
+}
+.lunchContain .footer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(49, 49, 49);
+}
+.lunchContain .footer p {
+  margin-top: 7px;
+  margin-left: 10px;
+  line-height: 40px;
+  padding-top: 2px;
+  text-align: center;
+  font-size: 1.6em;
+  color: azure;
+  font-family: DKLongreach;
+}
+.lunchContain .footer #btnContact {
+  font-size: 1.4em;
+  letter-spacing: 3px;
+  font-family: DKLongreach;
+  color: azure;
+  margin-right: 10px;
+  background: transparent;
+  border: 2px solid azure;
+  transition: all 0.25ms ease;
+}
+.lunchContain .footer #btnContact:hover {
+  color: black;
+  background-color: azure;
+}
+
+.dinnerContain {
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/assets/picts/breakfast-page/ideaRecipes.png");
+}
+.dinnerContain .present .navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.dinnerContain .present .navbar .navbar-brand {
+  margin-left: 15px;
+}
+.dinnerContain .present .navbar .navbar-brand h2 {
+  font-weight: bold;
+  color: azure;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.56);
+}
+.dinnerContain .present .navbar #btnCanvas {
+  display: none;
+  font-size: 1.5em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+}
+.dinnerContain .present .navbar .navbar-nav {
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 12px;
+}
+.dinnerContain .present .navbar .navbar-nav .nav-item .nav-link {
+  font-size: 1.8em;
+  color: azure;
+  letter-spacing: 2px;
+  font-family: Bakery;
+  text-shadow: 0px 0px 8px rgba(16, 3, 133, 0.56);
+}
+.dinnerContain .present .navbar .navbar-nav #btnLogIn {
+  font-size: 1.4em;
+  color: azure;
+  border: transparent;
+  background: transparent;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.56);
+}
+.dinnerContain .dinnerPresent {
+  padding-bottom: 55px;
+}
+.dinnerContain .dinnerPresent .name {
+  letter-spacing: 3px;
+  font-size: 2.1em;
+  padding-top: 5px;
+  text-align: center;
+  font-family: RoundedSans;
+  color: azure;
+  text-shadow: 0px 0px 8px rgb(0, 0, 0);
+}
+.dinnerContain .dinnerPresent .listDinner {
+  margin-top: -10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+}
+.dinnerContain .dinnerPresent .listDinner .row .col-lg-4 .img-fluid {
+  cursor: pointer;
+  height: 230px;
+  max-width: 450px;
+  margin-top: 30px;
+  border-radius: 20px;
+  border: 0px solid azure;
+  transition: all 0.25ms ease;
+}
+.dinnerContain .footer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(49, 49, 49);
+}
+.dinnerContain .footer p {
+  margin-top: 7px;
+  margin-left: 10px;
+  line-height: 40px;
+  padding-top: 2px;
+  text-align: center;
+  font-size: 1.6em;
+  color: azure;
+  font-family: DKLongreach;
+}
+.dinnerContain .footer #btnContact {
+  font-size: 1.4em;
+  letter-spacing: 3px;
+  font-family: DKLongreach;
+  color: azure;
+  margin-right: 10px;
+  background: transparent;
+  border: 2px solid azure;
+  transition: all 0.25ms ease;
+}
+.dinnerContain .footer #btnContact:hover {
+  color: black;
+  background-color: azure;
+}
+
 .connectContain {
   height: 100vh;
   background-position: center;
@@ -1046,6 +1370,30 @@ body {
     margin-left: -15px;
     margin-bottom: -5px;
   }
+  .breakfastContain .present .navbar #btnCanvas {
+    display: block;
+    margin-right: 10px;
+    text-shadow: 0px 0px 8px rgb(0, 0, 0);
+  }
+  .breakfastContain .present .navbar .navbar-nav {
+    display: none;
+  }
+  .lunchContain .present .navbar #btnCanvas {
+    display: block;
+    margin-right: 10px;
+    text-shadow: 0px 0px 8px rgb(0, 0, 0);
+  }
+  .lunchContain .present .navbar .navbar-nav {
+    display: none;
+  }
+  .dinnerContain .present .navbar #btnCanvas {
+    display: block;
+    margin-right: 10px;
+    text-shadow: 0px 0px 8px rgb(0, 0, 0);
+  }
+  .dinnerContain .present .navbar .navbar-nav {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .mainContain .present {
@@ -1428,5 +1776,14 @@ body {
   }
   .wellContain .detente .listPause .row .col-lg-4 .img-fluid {
     max-width: 270px;
+  }
+  .breakfastContain .breakfastPresent .name {
+    font-size: 1.6em;
+  }
+  .lunchContain .lunchContain .name {
+    font-size: 1.6em;
+  }
+  .dinnerContain .dinnerPresent .name {
+    font-size: 1.6em;
   }
 }/*# sourceMappingURL=styles.css.map */

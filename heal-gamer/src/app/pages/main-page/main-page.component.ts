@@ -15,24 +15,6 @@ export class MainPageComponent {
     console.log(value);
   }
 
-  ideas = [
-    {
-      id: 1,
-      when: 'Petits-Déjeuners',
-      pict: '/assets/picts/main-page/breakfastIdeas.png',
-    },
-    {
-      id: 2,
-      when: 'Repas de Midi',
-      pict: '/assets/picts/main-page/lunchIdeas.jpeg',
-    },
-    {
-      id: 3,
-      when: 'Diner du Soir',
-      pict: '/assets/picts/main-page/dinnerIdeas.jpg',
-    },
-  ];
-
   person = {
     user: '',
     email: '',

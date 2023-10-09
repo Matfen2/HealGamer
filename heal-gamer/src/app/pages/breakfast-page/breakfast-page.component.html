@@ -1,4 +1,4 @@
-<div class="mainContain">
+<div class="breakfastContain">
     <div class="present">
         <nav class="navbar">
             <div class="navbar-brand">
@@ -11,47 +11,13 @@
                 <button type="button" id="btnLogIn" [routerLink]="'/log-in-page'"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
             </div>
         </nav>
-        <div class="guide">
-            <p>Recevoir le guide GRATUITEMENT :</p>
-            <form #guide="ngForm" (ngSubmit)="showGuide(guide)">
-                <div class="form-area">
-                    <div class="form-group">
-                        <label></label>
-                        <input type="text" name="message" class="form-control" #message="ngModel" [(ngModel)]="log.message" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" [ngClass]="{'is.invalid': message.touched && message.invalid}" placeholder="Entrer votre adresse email" required />
-                        <div class="warning" *ngIf="message.invalid && (message.touched || message.dirty)">
-                            <div class="alert alert-danger" *ngIf="message.hasError('required')">Adresse email est requise</div>
-                            <div class="alert alert-danger" *ngIf="message.hasError('pattern')">Adresse email est incorrecte</div>
-                        </div>
-                        <button type="submit" id="btnRecive" [disabled]="guide.invalid">RECEVOIR</button>
-                    </div>
-                </div>
-            </form>
-        </div>
     </div>
-    <div class="goal">
-        <p>“Nous sommes des milliers de presonnes dans ce monde à etre sédentaire, voire peu actif, vu ce que les progrès technologiques nous permettent de faire, mais au profit de nos santé qui se dégradent lentement, mais brutal sans que nous nous rendions compte.”</p>
-    </div>
-    <div class="ideas">
-        <p class="recipes">Des idées de recettes :</p>
-        <div class="listIdeas">
+    <div class="breakfastPresent">
+        <h2 class="name">Petits déjeuners :</h2>
+        <div class="listBreakfast">
             <div class="row">
-                <div class="col-lg-4">
-                    <img src="/assets/picts/main-page/breakfastIdeas.png" class="img-fluid w-100" alt="pictWhen" />
-                    <div class="containIdeas">
-                        <p [routerLink]="'/breakfast-page'">BREAKFAST</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <img src="/assets/picts/main-page/lunchIdeas.jpeg" class="img-fluid w-100" alt="pictWhen" />
-                    <div class="containIdeas">
-                        <p [routerLink]="'/lunch-page'">REPAS DE MIDI</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <img src="/assets/picts/main-page/dinnerIdeas.jpg" class="img-fluid w-100" alt="pictWhen" />
-                    <div class="containIdeas">
-                        <p [routerLink]="'/evening-dinner-page'">DINER DU SOIR</p>
-                    </div>
+                <div class="col-lg-4" *ngFor="let recipe of recipes">
+                    <img [src]="recipe.pict" class="img-fluid w-100" alt="pictBreakfast" appIdea />
                 </div>
             </div>
         </div>
