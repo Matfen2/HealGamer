@@ -11,6 +11,7 @@ import { BreakfastPageComponent } from './breakfast-page/breakfast-page.componen
 import { LunchPageComponent } from './lunch-page/lunch-page.component';
 import { EveningDinnerPageComponent } from './evening-dinner-page/evening-dinner-page.component';
 import { IdeaDirective } from './idea.directive';
+import { BreakfastRecipesComponent } from './breakfast-recipes/breakfast-recipes.component';
 
 const routesPages : Routes = [
   {path: '', redirectTo: '/main-page', pathMatch: 'full'},
@@ -19,6 +20,7 @@ const routesPages : Routes = [
   {path: 'sign-up-page', component: SignUpPageComponent},
   {path: 'well-page', component: WellPageComponent},
   {path: 'breakfast-page', component: BreakfastPageComponent},
+  {path: 'breakfast-recipes/:id', component: BreakfastRecipesComponent},
   {path: 'lunch-page', component: LunchPageComponent},
   {path: 'evening-dinner-page', component: EveningDinnerPageComponent},
   {path: 'anti-inflammatory-page', component: AntiInflammatoryPageComponent}
@@ -35,6 +37,7 @@ const routesPages : Routes = [
     LunchPageComponent,
     EveningDinnerPageComponent,
     IdeaDirective,
+    BreakfastRecipesComponent,
   ],
   imports: [
     FormsModule,
