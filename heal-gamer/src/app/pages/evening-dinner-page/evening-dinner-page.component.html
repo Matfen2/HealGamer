@@ -17,8 +17,16 @@
         <div class="listDinner">
             <div class="row">
                 <div class="col-lg-4" *ngFor="let recipe of recipes">
-                    <img [src]="recipe.pict" class="img-fluid w-100" alt="pictBreakfast" appIdea />
+                    <img [src]="recipe.pict" [routerLink]="['/dinner-recipes', recipe.id]" class="img-fluid w-100" alt="pictBreakfast" appIdea />
                 </div>
+            </div>
+        </div>
+        <div class="drink">
+            <p class="list">Boisson/huile qui aident à mieux dormir :</p>
+            <div class="listIngredient">
+                <p><em>1 Tisane à la camomille</em></p>
+                <p><em>2 gouttes de l’huile végétal</em></p>
+                <p><em>1 verre de soja végétal</em></p>
             </div>
         </div>
     </div>

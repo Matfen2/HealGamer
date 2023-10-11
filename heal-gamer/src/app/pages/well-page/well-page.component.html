@@ -12,7 +12,23 @@
             </div>
         </nav>
         <div class="goal">
-            <p class="goalDefine"><em>Le but de HealGamer est :</em></p>
+            <div class="goalBody">
+                <p class="listGoal">Le but de Heal Gamer est de :</p>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>Manger sainement sans se priver</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <i class="fa-solid fa-face-smile"></i>
+                        <p>Connaitre le gout de la vie</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <i class="fa-solid fa-bolt"></i>
+                        <p>Avoir de l'énergie sans l'effet BreakEnergy</p>
+                    </div>
+                </div>
+            </div>
             <div class="goalSentence">
                 <p class="transform">Transformez votre vie grâce à la remise en forme de notre site : découvrez ce dont vous avez besoin pour atteindre vos objectifs.</p>
             </div>
@@ -62,7 +78,7 @@
     </div>
     <div class="footer">
         <p>© Heal Gamer</p>
-        <button type="button" id="btnContact">CONTACT</button>
+        <button type="button" id="btnContact" data-bs-toggle="modal" data-bs-target="#contact">CONTACT</button>
     </div>
 </div>
 
@@ -92,7 +108,7 @@
                     <div class="formGroupOne">
                         <div class="form-group">
                             <label></label>
-                            <input type="text" name="user" #user="ngModel" class="form-control" placeholder="Nom d'utilsateur" [(ngModel)]="sendMessage.user" minlength="15" [ngClass]="{'is.invalid': user.touched && user.invalid}" required />
+                            <input type="text" name="user" #user="ngModel" class="form-control" placeholder="Nom d'utilsateur" [(ngModel)]="person.user" minlength="15" [ngClass]="{'is.invalid': user.touched && user.invalid}" required />
                             <div class="warning" *ngIf="user.invalid && (user.dirty || user.touched)">
                                 <div class="alert alert-danger" *ngIf="user.hasError('required')">Pseudo est requis</div>
                                 <div class="alert alert-danger" *ngIf="user.hasError('minlength')">Pseudo doit contenir moins de 15 lettres</div>
@@ -100,7 +116,7 @@
                         </div>
                         <div class="form-group">
                             <label></label>
-                            <input type="email" name="email" class="form-control" placeholder="Adresse email" #email="ngModel" [(ngModel)]="sendMessage.email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" [ngClass]="{'is.invalid': email.invalid && email.touched}" required />
+                            <input type="email" name="email" class="form-control" placeholder="Adresse email" #email="ngModel" [(ngModel)]="person.email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" [ngClass]="{'is.invalid': email.invalid && email.touched}" required />
                             <div class="warning" *ngIf="email.invalid && (email.dirty || email.touched)">
                                 <div class="alert alert-danger" *ngIf="email.hasError('required')">L'adresse email est requise</div>
                                 <div class="alert alert-danger" *ngIf="email.hasError('pattern')">L'adresse email n'est pas correcte</div>
@@ -109,7 +125,7 @@
                     </div>  
                     <div class="form-group">
                         <label></label>
-                        <textarea name="message" placeholder="Message (limite 300 lettres)" #message="ngModel" class="form-control" [(ngModel)]="sendMessage.message" minlength="300" [ngClass]="{'is.invalid': message.touched && message.invalid}" cols="30" rows="10" required></textarea>
+                        <textarea name="message" placeholder="Message (limite 300 lettres)" #message="ngModel" class="form-control" [(ngModel)]="person.message" minlength="300" [ngClass]="{'is.invalid': message.touched && message.invalid}" cols="30" rows="10" required></textarea>
                         <div class="warning" *ngIf="message.invalid && (message.dirty || message.touched)">
                             <div class="alert alert-danger" *ngIf="message.hasError('required')">Le message est requis</div>
                             <div class="alert alert-danger" *ngIf="message.hasError('minlength')">Le message doit contenir moins de 300 lettres</div>

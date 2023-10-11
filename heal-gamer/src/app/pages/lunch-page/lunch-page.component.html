@@ -17,8 +17,17 @@
         <div class="listLunch">
             <div class="row">
                 <div class="col-lg-4" *ngFor="let recipe of recipes">
-                    <img [src]="recipe.pict" class="img-fluid w-100" alt="pictBreakfast" appIdea />
+                    <img [src]="recipe.pict" [routerLink]="['/lunch-recipes', recipe.id]" class="img-fluid w-100" alt="pictBreakfast" appIdea />
                 </div>
+            </div>
+        </div>
+        <div class="drink">
+            <p class="list">Boisson qui fait baisser le taux de gyclémie de 8 à 30 % :</p>
+            <p class="mix">Mélanger tous les ingrédients :</p>
+            <div class="listIngredient">
+                <p><em>1/2 jus de citron</em></p>
+                <p><em>1 c-à-s de vinaigre de pomme</em></p>
+                <p><em>1 verre d'eau</em></p>
             </div>
         </div>
     </div>

@@ -12,6 +12,8 @@ import { LunchPageComponent } from './lunch-page/lunch-page.component';
 import { EveningDinnerPageComponent } from './evening-dinner-page/evening-dinner-page.component';
 import { IdeaDirective } from './idea.directive';
 import { BreakfastRecipesComponent } from './breakfast-recipes/breakfast-recipes.component';
+import { LunchRecipesComponent } from './lunch-recipes/lunch-recipes.component';
+import { DinnerRecipesComponent } from './dinner-recipes/dinner-recipes.component';
 
 const routesPages : Routes = [
   {path: '', redirectTo: '/main-page', pathMatch: 'full'},
@@ -22,7 +24,9 @@ const routesPages : Routes = [
   {path: 'breakfast-page', component: BreakfastPageComponent},
   {path: 'breakfast-recipes/:id', component: BreakfastRecipesComponent},
   {path: 'lunch-page', component: LunchPageComponent},
+  {path: 'lunch-recipes/:id', component: LunchRecipesComponent},
   {path: 'evening-dinner-page', component: EveningDinnerPageComponent},
+  {path: 'dinner-recipes/:id', component: DinnerRecipesComponent},
   {path: 'anti-inflammatory-page', component: AntiInflammatoryPageComponent}
 ]
 
@@ -38,6 +42,8 @@ const routesPages : Routes = [
     EveningDinnerPageComponent,
     IdeaDirective,
     BreakfastRecipesComponent,
+    LunchRecipesComponent,
+    DinnerRecipesComponent,
   ],
   imports: [
     FormsModule,

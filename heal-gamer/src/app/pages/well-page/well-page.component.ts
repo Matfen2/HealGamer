@@ -44,14 +44,6 @@ export class WellPageComponent {
   ];
 
   person = {
-    comment: '',
-  };
-
-  giveIdea(give: NgForm) {
-    console.log(give);
-  }
-
-  sendMessage = {
     user: '',
     email: '',
     message: '',
